@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Paryavaran: An advanced weather app</string>
+    <string name="age_statement">Your age will be </string>
+    <string name="pollution_statement">The pollution is there so you should</string>
+    <string name="masking">Use mask</string>
+    <string name="notexit">Stay in home</string>
+    <string name="goodair">Good air, you must try a walk</string>
+    <string name="rain">There is a high probability of rain so carry an umbrella</string>
+    <string name="hot">Very hot air, use gamachha</string>
+    <string name="respiratoryissue">There will respiratory issue to you.</string>
+    <string name="haze">There is chance of haze i.e. Visibility issues.</string>
+    <string name="acidrain">Rain with acid rain</string>
+    <string name="serdisease">There is a chance of cardiovascular disease</string>
+    <string name="lungcancer">Chances of lung cancer.</string>
+    <string name="irritation">There will be chances of irritation due to high amount Ammonia.</string>
+    <string name="skinburns">Chances of skin burning</string>
+    <string name="healthadvisory">According to your environment conditions you should: </string>
+    <string name="asthma">There is a very good chance of asthma</string>
+    <string name="neurologyandreproduction">Due to Ozone there may be neurolog</string>
+
+    <string name="seriousdisease">Serious disease issue like Heart disease, lung disease</string>
+    <string name="Temperature">Temperature in Celsius : </string>
+    <string name="pressure">Atmospheric Pressure in Pascals : </string>
+    <string name="humidity">This time humidity is : </string>
+    <string name="sunrise">Sunrise time (AM) : </string>
+    <string name="aqi">AQI level : </string>
+    <string name="sunset">Sunset time (PM) : </string>
+    <string name="ozone">O₃ level is : </string>
+    <string name="no2">NO₂ level is : </string>
+    <string name="so2">SO₂ level is : </string>
+    <string name="pm25">PM2.5 leve is : </string>
+    <string name="pm10">PM10 level is : </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

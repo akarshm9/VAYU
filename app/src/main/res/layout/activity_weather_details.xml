@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherDetails">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/weather_tlbr"
+            app:menu="@menu/pollution_detail_menu"
+            
+            android:background="#9C27B0"/>
+    </com.google.android.material.appbar.AppBarLayout>
+<!--    <com.airbnb.lottie.LottieAnimationView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:lottie_rawRes="@raw/weather"-->
+<!--        app:lottie_loop="true"-->
+<!--        android:id="@+id/weather_animation"-->
+<!--        android:layout_gravity="center"-->
+<!--        app:lottie_autoPlay="true"/>-->
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatheraqitabs"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/updatepager"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Air details"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="100dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="AQI : "/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/aqi_level"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:text="Composition details"/>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:columnCount="3"
+
+        android:rowCount="3"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="7dp"
+            app:cardElevation="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/v1">
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/comp1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=" : "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/val1"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="7dp"
+            app:cardElevation="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/v2">
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/comp2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=" : "/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/val2"
+                />
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:cardCornerRadius="15dp"
+           android:layout_margin="7dp"
+           app:cardElevation="100dp">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="10dp"
+               android:orientation="horizontal">
+               <LinearLayout
+                   android:layout_width="8dp"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   android:id="@+id/v3">
+
+               </LinearLayout>
+               <TextView
+                   android:layout_width="wrap_content"
+
+                   android:layout_height="wrap_content"
+                   android:id="@+id/comp3"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="5dp"
+                   android:text=" : "/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:id="@+id/val3"
+                   />
+           </LinearLayout>
+       </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            android:layout_margin="7dp"
+            app:cardElevation="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/v4">
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/comp4"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=" : "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/val4"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_margin="7dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="100dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="8dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/v5">
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:id="@+id/comp5"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text=" : "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/val5"
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+</HorizontalScrollView>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/error"
+    />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/piechart"
+        />
+
+
+
+
+
+
+</LinearLayout>

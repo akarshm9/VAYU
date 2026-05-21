@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PollutionDetails">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                android:text="@string/aqi"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:id="@+id/aqi_level"/>
+        </LinearLayout>
+      <GridLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:rowCount="6"
+          android:layout_gravity="center"
+          android:columnCount="2"
+          android:padding="15dp">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/ozone"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/o3level"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/no2"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/no2level"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/so2"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/so2level"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/pm25"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/pm25level"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="@string/pm10"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/pm10level"/>
+
+      </GridLayout>
+    </LinearLayout>
+
+</FrameLayout>
