@@ -90,6 +90,9 @@ public class PollutionDetails extends Fragment {
                     JSONObject data = list.getJSONObject(0);
                     JSONObject main = data.getJSONObject("main");
                     int aqi = main.getInt("aqi");  // ✅ aqi is an integer, not an object
+                    if (aqi>3){
+                        Toast.makeText(requireContext(), "Be careful! High pollution", Toast.LENGTH_SHORT).show();
+                    }
 
                     JSONObject components = data.getJSONObject("components");
 
